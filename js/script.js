@@ -116,7 +116,7 @@ function addListenerToButton(button) {
       break;
     case "clearAll":
       button.addEventListener("click", (e) => {
-        clearAllVars();
+        clear();
       });
       break;
     case "clear":
@@ -179,7 +179,7 @@ function turnCalculatorOnOff(e) {
   }
 }
 
-function clearAllVars() {
+function clear() {
   restart("clearAll");
 }
 
@@ -198,7 +198,7 @@ function clearCurrentVar() {
 }
 
 function addNumberToScreen(e, value) {
-  isResultShown ? clearAllVars() : null;
+  isResultShown ? clear() : null;
 
   numInMainScreen === "0"
     ? (numInMainScreen = value)
@@ -209,7 +209,7 @@ function addNumberToScreen(e, value) {
 }
 
 function addCommaToScreen(e, value) {
-  isResultShown ? clearAllVars() : null;
+  isResultShown ? clear() : null;
 
   if (numInMainScreen.indexOf(".") !== -1) {
     return;
