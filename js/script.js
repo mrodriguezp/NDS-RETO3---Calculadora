@@ -27,7 +27,7 @@ const screen = document.querySelector(".screen");
 const mainInput = document.getElementById("main-input");
 const secondaryInput = document.getElementById("secondary-input");
 
-let num1 = "0"; // 0 o "" ????
+let num1 = "0";
 let num2 = "";
 let operand = "";
 let numInMainScreen = "0";
